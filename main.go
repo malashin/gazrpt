@@ -39,8 +39,8 @@ func main() {
 		case reTrailer.MatchString(file):
 			jobType = "trailer"
 		default:
-			fmt.Println("WRONG FILENAME")
-			continue
+			fmt.Println("WRONG FILENAME: " + file)
+			return
 		}
 
 		s := file + "\t" + outputMap[jobType] + "\n"
