@@ -18,7 +18,7 @@ var reTrailer = regexp.MustCompile(`^\w+_\d{4}__hd_q\d+w\d+\.trailer\.mp4$`)
 var outputMap = map[string]string{
 	"jpg":     "Постер",
 	"psd":     "Постер (исходник)",
-	"trailer": "Трейлер",
+	"trailer": "Трейлер HD",
 }
 
 func main() {
